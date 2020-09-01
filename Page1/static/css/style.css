@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin: 3vh 5%;
+}
+
+.navbar li:first-child {
+  margin-left: 2%;
+  margin-right: 15%;
+}
+
+.navbar li:last-child{
+  margin-right: 2%;
+  margin-left: 15%;
+}
+
+.about, .skills ul, .projects ul, .contacts{
+  display: flex;
+}
+
+.about > div {
+  flex: 1;
+}
+
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.skill {
+  display: flex;
+}
+
+.outer-circle {
+  display: flex;
+  align-items: center;
+  height: 4em;
+  width: 4em;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.inner-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.inner-circle div {
+  align-self: center;
+  vertical-align: middle;
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 1rem;
+}
+
