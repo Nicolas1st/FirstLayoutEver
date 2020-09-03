@@ -1,4 +1,19 @@
+.no-padding {
+  padding: 0;
+}
+
 /* nabbar */
+
+header {
+  color: #bbb;
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/cropped4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .navbar {
   padding: 0;
   display: flex;
@@ -15,7 +30,7 @@
 }
 
 .navbar a {
-  color: black;
+  color: #bbb;
   text-decoration: none;
 }
 
@@ -31,14 +46,43 @@
 
 /* main headings */
 .main-heading{
+  position: absolute;
+  right: 0;
+  width: 50%;
   text-align: center;
 }
 
-.about, .skills ul, .projects ul, .contacts{
+/* .about, .skills ul, .projects ul, .contacts{
   display: flex;
+  flex-wrap: wrap;
+} */
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about > div {
+.about-section-part-one {
+  flex: 1;
+}
+
+.about-section-part-two {
+  flex: 1;
+}
+
+.main-content {
+  padding: 0 10%;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-div {
   flex: 1;
 }
 
@@ -46,7 +90,7 @@
 /* Achievments */
 .achievements {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .achievements li {
@@ -80,6 +124,7 @@
 /* Skills */
 .skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
 }
@@ -124,13 +169,4 @@
   align-items: center;
   align-content: center;
   margin-left: 1rem;
-}
-
-.skill{
-  transition: all .3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
 }
