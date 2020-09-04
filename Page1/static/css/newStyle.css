@@ -1,0 +1,23 @@
+.main-header {
+  background-image: url("../images/cropped4.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-heading {
+  color: white;
+  float: right;
+}
+
+/* ############################ */
+.about {
+  display: flex;
+}
+
+.background {
+  /* box-sizing: content-box; */
+}
+.background p {
+  width: 50%;
+}

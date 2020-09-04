@@ -1,5 +1,10 @@
-.no-padding {
+:root {
+  --skill-highlight-color: #333333;
+}
+
+html, body {
   padding: 0;
+  margin: 0;
 }
 
 /* nabbar */
@@ -27,11 +32,19 @@ header {
 
 .navbar li {
   margin: 3vh 5%;
+  text-transform: capitalize;
 }
 
 .navbar a {
   color: #bbb;
   text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-position: below;
+  text-decoration-color: white;
+  transition-duration: 1s;
 }
 
 .navbar li:first-child {
@@ -45,12 +58,50 @@ header {
 }
 
 /* main headings */
-.main-heading{
+
+.strange-container {
+  width: 50%;
   position: absolute;
   right: 0;
-  width: 50%;
+}
+.main-heading{
+  /* position: absolute;
+  right: 0; */
   text-align: center;
 }
+
+.projects {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 140px 140px;
+  grid-template-columns: 140px 140px;
+  grid-gap: 40px;
+}
+
+.grid-item {
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  background-color: grey;
+  outline-color: black;
+  outline-width: 1px;
+  outline-offset: 0;
+}
+
+.grid-item:hover {
+  /* border: 30px solid grey; */
+  transform: rotateX(180deg);
+  /* transform: rotate(45deg); */
+  margin: 0;
+  border: 20px solid #333;
+  background-color: #333;
+  /* width: 150px;
+  height: 150px; */
+  /* transition-property: background-color width height; */
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+}
+
 
 /* .about, .skills ul, .projects ul, .contacts{
   display: flex;
@@ -59,15 +110,12 @@ header {
 
 .about-section {
   display: flex;
+  flex: auto;
   flex-wrap: wrap;
 }
 
-.about-section-part-one {
-  flex: 1;
-}
-
-.about-section-part-two {
-  flex: 1;
+.about-section-part-one p {
+  width: 50%;
 }
 
 .main-content {
@@ -94,7 +142,14 @@ header {
 }
 
 .achievements li {
+  /* margin: 20px; */
+  display: flex;
+  justify-content: center;
   list-style-type: none;
+}
+
+.achievement-score {
+  display: flex;
 }
 
 .outer-romb {
@@ -121,6 +176,13 @@ header {
   margin: auto;
   transform: rotate(-45deg);
 }
+
+.outer-romb:hover {
+  transform: rotate(25deg);
+  transition: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.15s;
+}
 /* Skills */
 .skills {
   display: flex;
@@ -131,7 +193,9 @@ header {
 
 .skill {
   display: flex;
+  flex-wrap: wrap;
 }
+
 
 .outer-circle {
   display: flex;
@@ -156,6 +220,7 @@ header {
 }
 
 .outer-circle:hover {
+  transition-duration: 0.25s;
   background: green;
 }
 
