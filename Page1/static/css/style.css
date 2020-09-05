@@ -7,9 +7,7 @@ html, body {
   margin: 0;
 }
 
-/* nabbar */
-
-header {
+.main-header {
   color: #bbb;
   position: relative;
   height: 100vh;
@@ -19,6 +17,11 @@ header {
   background-position: top;
 }
 
+
+/* nabbar */
+.navbar-container {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .navbar {
   padding: 0;
   display: flex;
@@ -35,9 +38,12 @@ header {
   text-transform: capitalize;
 }
 
-.navbar a {
-  color: #bbb;
+.nav-link {
+  /* color: #bbb; */
+  color: white;
   text-decoration: none;
+  padding-bottom: 0.5;
+  border-bottom: 1px solid white;
 }
 
 .navbar a:hover {
@@ -70,7 +76,7 @@ header {
   text-align: center;
 }
 
-.projects {
+.categories {
   display: grid;
   justify-content: center;
   grid-template-rows: 140px 140px;
@@ -78,7 +84,7 @@ header {
   grid-gap: 40px;
 }
 
-.grid-item {
+.category {
   width: 120px;
   height: 120px;
   margin: 20px;
@@ -86,15 +92,18 @@ header {
   outline-color: black;
   outline-width: 1px;
   outline-offset: 0;
+  background-image: none;;
+  transition-duration: 1s;
 }
 
-.grid-item:hover {
+.category:hover {
   /* border: 30px solid grey; */
-  transform: rotateX(180deg);
+  /* transform: rotateX(180deg); */
   /* transform: rotate(45deg); */
   margin: 0;
-  border: 20px solid #333;
-  background-color: #333;
+  padding: 20px;
+  background-image: url("../images/artificialnteligence.jpg");
+  background-size: cover;
   /* width: 150px;
   height: 150px; */
   /* transition-property: background-color width height; */
@@ -116,7 +125,7 @@ header {
 
 .about-section-part-one p {
   width: 50%;
-}
+}h
 
 .main-content {
   padding: 0 10%;
