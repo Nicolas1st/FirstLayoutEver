@@ -25,7 +25,7 @@ html, body {
 
 .main-nav li {
   display: inline-block;
-  margin: 3vh 5%;
+  margin: 1.8em 5%;
   position: relative;
 }
 
@@ -78,7 +78,6 @@ html, body {
   transition-duration: 0.3s;
 }
 
-
 .underline {
   top: 100%;
   height: 1px;
@@ -95,13 +94,91 @@ html, body {
 }
 
 /* main heading #################################*/
-.main-heading {
+.header-container {
+  height: 80vh;
+  width: 60%;
   position: absolute;
   right: 0;
-  margin: 5% 15%;
+  /* display: flex;
+  flex-direction: column;
+  justify-items: center; */
+}
+
+.main-heading {
   text-transform: capitalize;
   text-align: center;
   font-size: 2.8em;
   color: white;
 }
 
+.categories-grid {
+  display: grid;
+  /* justify-content: space-around; */
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.category {
+  margin: 0;
+  width: 150px;
+  height: 0;
+  padding-bottom: ;
+  background-image: url("../images/artificialnteligence.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.category:hover {
+  background-color: red;
+}
+
+/* about sectoin ########################## */
+/* .about {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.achievments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.outer-romb {
+  width: 4em;
+  height: 4em;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.inner-romb {
+  width: 75%;
+  height: 75%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.success {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.outer-romb:hover {
+  transform: rotate(-60deg);
+  transition-duration: 0.3s;
+}
+
+/* .outer-romb:hover .success {
+  transform: rotate(60deg);
+} */
