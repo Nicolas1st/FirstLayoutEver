@@ -137,20 +137,25 @@ html, body {
 
 /* about sectoin ########################## */
 /* .about {
-  display: flex;
+  display: fl80
   flex-wrap: wrap;
 } */
 
 .achievments {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.achievment {
+  margin: 2em;
+  position: relative;
 }
 
 .outer-romb {
   width: 4em;
   height: 4em;
-  border: 1px solid black;
+  border: 1px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,23 +167,55 @@ html, body {
 .inner-romb {
   width: 75%;
   height: 75%;
-  border: 1px solid black;
+  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .success {
-  transform: rotate(45deg);
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
+  bottom: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 
-.outer-romb:hover {
+.achievment:hover .outer-romb {
   transform: rotate(-60deg);
   transition-duration: 0.3s;
 }
 
-/* .outer-romb:hover .success {
-  transform: rotate(60deg);
+.achievment-name {
+  position: absolute;
+  text-align: center;
+}
+
+
+/* experiment ######################################*/
+.about {
+  /* min-width: 80px;
+  max-width: 1200px; */
+  margin: auto;
+}
+.background, .flex-container {
+  min-width: 80px;
+  max-width: 600px;
+}
+
+.contacts {
+  display: flex;
+}
+
+/* .contacts ul {
+  padding: 0;
 } */
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
