@@ -135,12 +135,6 @@ html, body {
   background-color: red;
 }
 
-/* about sectoin ########################## */
-/* .about {
-  display: fl80
-  flex-wrap: wrap;
-} */
-
 .achievments {
   display: flex;
   flex-wrap: wrap;
@@ -193,13 +187,16 @@ html, body {
   text-align: center;
 }
 
-
-/* experiment ######################################*/
+/* about sectoin */
 .about {
-  /* min-width: 80px;
-  max-width: 1200px; */
+  /* box-sizing: content-box; */
+}
+
+.section-header {
+  max-width: 1200px;
   margin: auto;
 }
+
 .background, .flex-container {
   min-width: 80px;
   max-width: 600px;
@@ -207,15 +204,76 @@ html, body {
 
 .contacts {
   display: flex;
+  flex-wrap: wrap;
 }
-
-/* .contacts ul {
-  padding: 0;
-} */
 
 .display-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* box-sizing: content-box; */
 }
 
+@media (max-width: 1216px) {
+  .section-header {
+    width: 600px;
+  }
+}
+
+/* skills section */
+
+.skills {
+  width: 600px;
+  margin: auto;
+}
+
+@media (min-width: 1217px) {
+  .skills {
+    width: 1200px;
+  }
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.outer-circle {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition-duration: 0.3s;
+  background-color: white;
+}
+
+.outer-circle:hover {
+  background-color: rgba(34, 155, 34, 0.5);
+  transition-duration: 0.3s;
+}
+
+.inner-circle {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+.main-footer {
+  background-color: black;
+  margin-bottom: 0;
+}
+
+/* .main {
+  padding: 0 25%;
+} */
