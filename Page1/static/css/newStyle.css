@@ -276,4 +276,32 @@ html, body {
 
 /* .main {
   padding: 0 25%;
-} */
+} */  
+
+.projects {
+  width: 600px;
+  margin: auto;
+}
+
+@media (min-width: 1217px) {
+  .projects {
+    width: 1200px;
+  }
+}
+
+.projects ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 25%;
+  height: 25%;
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+}
