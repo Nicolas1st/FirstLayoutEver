@@ -2,143 +2,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyPortfolio</title>
-  <link rel="stylesheet" href="static/css/style.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
-<body class="no-padding">
+<body>
   <header class="main-header">
-    <nav class="navbar-container">
-      <ul class="navbar">
-        <li><a href="#" class="nav-link">logo</a></li>
-        <li><a href="#" class="nav-link">about</a></li>
-        <li><a href="#" class="nav-link">skills</a></li>
-        <li><a href="#" class="nav-link">works</a></li>
-        <li><a href="#" class="nav-link">contacts</a></li>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">logo</a></li>
+        <li><a href="#" class="square-brackets">skills</a></li>
+        <li><a href="#" class="square-brackets">projects</a></li>
+        <li><a href="#" class="square-brackets">about</a></li>
+        <li>
+          <a href="#">contacts</a>
+          <div class="underline"></div>
+        </li>
       </ul>
     </nav>
-    <div class="strange-container">
-      <h1 class="main-heading">The Craft I love<br/>
-        Layout & Frontend</h1>
-        <div class="categories">
-          <div class="category">cat 1</div>
-          <div class="category">cat 2</div>
-          <div class="category">cat 3</div>
-          <div class="category">cat 4</div>
-        </div>
+    <div class="header-container">
+      <h1 class="main-heading">the craft i love<br/>frontend & layout</h1>  
+      <!-- <div class="categories-grid">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div> -->
+      </div>
     </div>
-    
   </header>
-  <main class="main-content">
-      <h2>About Me</h2>
-      <div class="about-section">
-        <div class="about-section-part-one">
-          <h3>Background</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto asperiores architecto doloribus deleniti culpa, rerum molestiae minima in iure! Beatae aliquid possimus dolorum. Numquam facilis neque hic assumenda laudantium cupiditate fuga unde vel sapiente! Debitis sequi itaque est at, placeat eaque ea hic non tempore amet perferendis minima architecto.</p>
+
+  <main class="main">
+    <section class="about">
+
+      <h2 class="section-header">about</h2>
+      <div class="display-flex">
+        <div class="background">
+          <h3 class="section-subheading">Background</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, earum. Consequuntur molestias deserunt adipisci consectetur distinctio eius ut quam facilis obcaecati fugit laudantium sint doloremque odio repellat natus eum, hic esse blanditiis sapiente assumenda aspernatur. Facere autem nulla labore dolore voluptatum distinctio aliquam mollitia aperiam velit quibusdam culpa commodi ullam, quo, tempora rerum quia ipsum natus alias ad. Modi corrupti a id officiis, quia quisquam doloremque iste cupiditate deserunt corporis est illo voluptates ut dolorum aspernatur. Fugit non nulla saepe, cum explicabo alias illo ipsam ea autem. Voluptatibus ipsam voluptatum excepturi rerum. Nobis culpa fuga quam laudantium ratione facere atque aut quaerat dolore facilis tempora unde eius dolorem corrupti nesciunt modi mollitia praesentium cupiditate laboriosam, voluptatum beatae. Laudantium rem quibusdam eum saepe molestiae ratione numquam, omnis ducimus laborum eveniet nihil dolores voluptate officia quos voluptatum inventore doloremque pariatur praesentium aliquam enim odit. Debitis aliquid alias aperiam hic ipsam voluptatum eos, amet architecto dignissimos dicta! Dolore voluptas, animi deleniti quasi sit soluta facere deserunt, reiciendis aliquam fuga temporibus nesciunt illo ab?</p>
         </div>
 
-        <div class="about-section-part-two">
-          
-          <h3>Achievements</h3>
-          <ul class="achievements">
-            <li>
+        <div class="flex-container">
+          <h3 class="section-subheading">achievments</h3>
+          <div class="achievments">
+            <div class="achievment">
               <div class="outer-romb">
                 <div class="inner-romb">
-                  <div>
-                    75
-                  </div>
                 </div>
               </div>
-              <div class="achievement-score">Projects Completed</div>
-            </li>
-            <li>
+              <div class="success">10</div>
+              <div class="achievment-name">projects completed</div>
+            </div>
+            <div class="achievment">
               <div class="outer-romb">
                 <div class="inner-romb">
-                  <div>
-                    154
-                  </div>
                 </div>
               </div>
-              <div class="achievement-score">Positive Comments</div>
-            </li>
-            <li>
+              <div class="success">10</div>
+              <div class="achievment-name">positive comments</div>
+            </div>
+            <div class="achievment">
               <div class="outer-romb">
                 <div class="inner-romb">
-                  <div>8</div>
                 </div>
               </div>
-              <div class="achievement-score">Years of experience</div>
-            </li>
-          </ul>
-          
-            <h3>Contacts</h3>
-            <div class="contacts">
-              <ul>
+              <div class="success">10</div>
+              <div class="achievment-name">years of exerience</div>
+            </div>
+            
+            <div class="personal">
+              <h3 class="section-subheading">socials</h3>
+              <div class="contacts">
+              <ul class="socials">
                 <li>linkedIn</li>
                 <li>github.com</li>
-                <li>personalsite.com</li>
+                <li>personalwebsite.com</li>
               </ul>
-
               <div class="quote">
-                <div><img src="" alt="Me"></div>
-                <div><q>Feel free to contact</q></div>
+                <img src="./static/images/user.png" alt="">
+                <q>feel free to ask</q>
               </div>
             </div>
-
+            </div>
+            
+          </div>
         </div>
       </div>
 
+    </section>
 
-      <h2>Skills</h2>
-
-      <ul class="skills">
-        <li class="skill">
-            <div class="outer-circle">
-              <div class="inner-circle">
-                100%
-              </div>
-            </div>
-            <div class="skill-name">
-              <h4>HTML5</h4>
-            </div>
+    <section class="skills">
+      <h2 class="section-header">skills</h2>
+      <ul>
+        <li class="outer-circle">
+          <div class="inner-circle">
+              <div>99%</div> <!-- html5 -->
+          </div>
         </li>
-        <li class="skill">
-            <div class="outer-circle">
-              <div class="inner-circle"><div>100%</div></div>
-            </div>
-            <div class="skill-name">
-              <h4>CSS3</h4>
-            </div>
+        <li class="outer-circle">
+          <div class="inner-circle">
+            <div>99%</div> <!-- css3 -->
+          </div>
         </li>
-        <li class="skill">
-            <div class="outer-circle">
-              <div class="inner-circle">100%</div>
-            </div>
-            <div class="skill-name">
-              <h4>JS</h4>
-            </div>
+        <li class="outer-circle">
+          <div class="inner-circle">
+            <div>100%</div><!-- js -->
+          </div>
         </li>
-        <li class="skill">
-            <div class="outer-circle">
-              <div class="inner-circle">100%</div>
-            </div>
-            <div class="skill-name">
-              <h4>Python</h4>
-            </div>
+        <li class="outer-circle">
+          <div class="inner-circle">
+            <div>100%</div><!-- python -->
+          </div>
         </li>
       </ul>
+    </section>
 
-      <h2>Projects</h2>
-      <div class="projects">
-        <ul>
-          <li><img src="" alt="Project1"></li>
-          <li><img src="" alt="Project2"></li>
-          <li><img src="" alt="Project3"></li>
-        </ul>
-      </div>
+    <section class="projects">
+      <h2 class="section-header">projects</h2>
+      <ul>
+        <li class="project">
+          <img src="static/images/waterfallBridge.jpg" alt="A jungle waterfall with a beautiful bridge in the foreground">
+          <div>
+            project 1<br/>
+            <a href="#">learn more</a>
+          </div>
+        </li>
+        <li class="project">
+          <img src="static/images/mountainEverest.jpg" alt="The summit of the mountain Everset">
+          <div>
+            project 1<br/>
+            <a href="#">learn more</a>
+          </div>
+        </li>
+        <li class="project">
+          <img src="static/images/ringLikeBridge.jpg" alt="Semicircle shaped bridge extending over a river">
+          <div>
+            project 1<br/>
+            <a href="#">learn more</a>
+          </div></li>
+      </ul>
+    </section>
 
-    </main>
-  <footer>
-    <p>&copy; Me, 2020 - &infin;</p>
+  </main>
+
+  <footer class="main-footer">
+    <p>From here on out, &copy; Me, 2020 - &infin;</p>
   </footer>
 </body>
 </html>
